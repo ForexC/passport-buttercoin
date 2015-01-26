@@ -14,10 +14,10 @@ describe('Strategy#userProfile', function() {
 
   // mock
   strategy._oauth2.get = function(url, accessToken, callback) {
-    if (url != 'https://api.github.com/user') { return callback(new Error('wrong url argument')); }
+    if (url != 'https://buttercoin.com/secure/me') { return callback(new Error('wrong url argument')); }
     if (accessToken != 'token') { return callback(new Error('wrong token argument')); }
 
-    var body = '{ "login": "octocat", "id": 1, "name": "monalisa octocat", "email": "octocat@github.com", "html_url": "https://github.com/octocat" }';
+    var body = '{ "hashedAccountId": "test-id-hash" }';
 
     callback(null, body, undefined);
   };
@@ -36,7 +36,7 @@ describe('Strategy#userProfile', function() {
     it('should parse profile', function() {
       expect(profile.provider).to.equal('buttercoin');
 
-      //expect(profile.id).to.equal('1');
+      expect(profile.hashedAccountId).to.equal('test-id-hash');
       //expect(profile.username).to.equal('octocat');
       //expect(profile.displayName).to.equal('monalisa octocat');
       //expect(profile.profileUrl).to.equal('https://github.com/octocat');
