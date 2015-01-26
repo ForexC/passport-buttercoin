@@ -1,26 +1,28 @@
 {
-  "name": "passport-github",
+  "name": "passport-buttercoin",
   "version": "0.1.7",
-  "description": "GitHub authentication strategy for Passport.",
+  "description": "Buttercoin authentication strategy for Passport.",
   "keywords": [
     "passport",
-    "github",
+    "buttercoin",
     "auth",
     "authn",
     "authentication",
     "identity"
   ],
-  "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
-  },
+  "contributors": [
+    {
+      "name": "Bennett Hoffman",
+      "email": "bennett@buttercoin.com",
+      "url": "http://buttercoin.com/"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/jaredhanson/passport-github.git"
+    "url": "http://github.com/buttercoin/passport-buttercoin.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-github/issues"
+    "url": "http://github.com/buttercoin/passport-buttercoin/issues"
   },
   "licenses": [
     {

@@ -37,11 +37,6 @@ describe('Strategy#userProfile', function() {
       expect(profile.provider).to.equal('buttercoin');
 
       expect(profile.hashedAccountId).to.equal('test-id-hash');
-      //expect(profile.username).to.equal('octocat');
-      //expect(profile.displayName).to.equal('monalisa octocat');
-      //expect(profile.profileUrl).to.equal('https://github.com/octocat');
-      //expect(profile.emails).to.have.length(1);
-      //expect(profile.emails[0].value).to.equal('octocat@github.com');
     });
 
     it('should set raw property', function() {
