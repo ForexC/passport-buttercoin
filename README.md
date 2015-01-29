@@ -69,5 +69,4 @@ For a complete, working example, refer to the [login example](https://github.com
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2011-2015 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>, Buttercoin <[http://buttercoin.com/](http://buttercoin.com/)>
-
+Copyright (c) 2011-2015 Buttercoin <[http://buttercoin.com/](http://buttercoin.com/)>, Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>

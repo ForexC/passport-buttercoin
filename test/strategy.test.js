@@ -1,12 +1,12 @@
 /* global describe, it, expect */
 /* jshint expr: true */
 
-var GitHubStrategy = require('../lib/strategy');
+var ButtercoinStrategy = require('../lib/strategy');
 
 
 describe('Strategy', function() {
 
-  var strategy = new GitHubStrategy({
+  var strategy = new ButtercoinStrategy({
       clientID: 'ABC123',
       clientSecret: 'secret'
     },
@@ -23,7 +23,7 @@ describe('Strategy', function() {
 
   describe('constructed with user agent option', function() {
 
-    var strategy = new GitHubStrategy({
+    var strategy = new ButtercoinStrategy({
         clientID: 'ABC123',
         clientSecret: 'secret',
         userAgent: 'example.com'
@@ -37,7 +37,7 @@ describe('Strategy', function() {
 
   describe('constructed with custom headers including user agent', function() {
 
-    var strategy = new GitHubStrategy({
+    var strategy = new ButtercoinStrategy({
         clientID: 'ABC123',
         clientSecret: 'secret',
         customHeaders: { 'User-Agent': 'example.net' }
@@ -51,7 +51,7 @@ describe('Strategy', function() {
 
   describe('constructed with both custom headers including user agent and user agent option', function() {
 
-    var strategy = new GitHubStrategy({
+    var strategy = new ButtercoinStrategy({
         clientID: 'ABC123',
         clientSecret: 'secret',
         customHeaders: { 'User-Agent': 'example.org' },

@@ -1,12 +1,12 @@
 /* global describe, it, expect, before */
 /* jshint expr: true */
 
-var GitHubStrategy = require('../lib/strategy');
+var ButtercoinStrategy = require('../lib/strategy');
 
 
 describe('Strategy#userProfile', function() {
 
-  var strategy =  new GitHubStrategy({
+  var strategy =  new ButtercoinStrategy({
       clientID: 'ABC123',
       clientSecret: 'secret'
     },

@@ -9,6 +9,10 @@ describe('passport-buttercoin', function() {
     expect(strategy).to.equal(strategy.Strategy);
   });
 
+  it('should export Strategy.Endpoint constructor', function() {
+    expect(strategy.Endpoint).to.be.a('function');
+  });
+
   it('should export Strategy constructor', function() {
     expect(strategy.Strategy).to.be.a('function');
   });
