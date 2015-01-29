@@ -12,7 +12,7 @@ var BUTTERCOIN_CLIENT_SECRET = "--insert-buttercoin-client-secret-here--";
 //   serialize users into and deserialize users out of the session.  Typically,
 //   this will be as simple as storing the user ID when serializing, and finding
 //   the user by ID when deserializing.  However, since this example does not
-//   have a database of user records, the complete GitHub profile is serialized
+//   have a database of user records, the complete Buttercoin profile is serialized
 //   and deserialized.
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -23,9 +23,9 @@ passport.deserializeUser(function(obj, done) {
 });
 
 
-// Use the GitHubStrategy within Passport.
+// Use the ButtercoinStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
-//   credentials (in this case, an accessToken, refreshToken, and GitHub
+//   credentials (in this case, an accessToken, refreshToken, and Buttercoin
 //   profile), and invoke a callback with a user object.
 passport.use(new ButtercoinStrategy({
     clientID: BUTTERCOIN_CLIENT_ID,
@@ -82,13 +82,13 @@ app.get('/login', function(req, res){
 
 // GET /auth/buttercoin
 //   Use passport.authenticate() as route middleware to authenticate the
-//   request.  The first step in GitHub authentication will involve redirecting
-//   the user to buttercoin.com.  After authorization, GitHubwill redirect the user
+//   request.  The first step in Buttercoin authentication will involve redirecting
+//   the user to buttercoin.com.  After authorization, Buttercoin will redirect the user
 //   back to this application at /auth/buttercoin/callback
 app.get('/auth/buttercoin',
   passport.authenticate('buttercoin'),
   function(req, res){
-    // The request will be redirected to GitHub for authentication, so this
+    // The request will be redirected to Buttercoin for authentication, so this
     // function will not be called.
   });
 

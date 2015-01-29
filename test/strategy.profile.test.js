@@ -14,7 +14,7 @@ describe('Strategy#userProfile', function() {
 
   // mock
   strategy._oauth2.get = function(url, accessToken, callback) {
-    if (url != 'https://buttercoin.com/secure/me') { return callback(new Error('wrong url argument')); }
+    if (url != 'https://www-sandbox.buttercoin.com/v1/account/depositAddress') { return callback(new Error('wrong url argument')); }
     if (accessToken != 'token') { return callback(new Error('wrong token argument')); }
 
     var body = '{ "hashedAccountId": "test-id-hash" }';
